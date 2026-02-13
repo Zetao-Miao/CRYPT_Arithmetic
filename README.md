@@ -39,7 +39,21 @@ This artifact implements the methods described in the paper, including:
     ├── RTL_gen.py            # RTL generation backend
     ├── BH.py                 # Bit-heap representation
     ├── bitheap.txt           # Example bit-heap input
+    ├── rtl/                  # Supporting SystemVerilog modules (add to Vivado design sources)
     └── eval_examples/        # Generated evaluation examples from the paper
+
+------------------------------------------------------------------------
+
+## RTL Folder (rtl)
+
+The `rtl` directory contains supporting SystemVerilog modules required
+by the generated designs.
+
+When using Vivado:
+
+-   Add all files inside the `rtl` folder to **Design Sources**.
+-   These modules implement reusable building blocks referenced by the
+    generated RTL.
 
 ------------------------------------------------------------------------
 
